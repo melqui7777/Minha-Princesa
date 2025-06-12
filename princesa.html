@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Branquinha</title>
+    <style>
+        /* --- Configurações Gerais --- */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #FCE4EC; /* Fundo rosa claro */
+            color: #141414; /* Cor de texto principal (preto Netflix) */
+        }
+
+        /* --- Container Principal --- */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 15px;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        /* --- Logo "AmorFlix" --- */
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #E50914; /* Vermelho Netflix */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* --- Moldura do Celular --- */
+        .phone-frame {
+            width: 300px;
+            height: 560px;
+            background-color: #1c1c1c; /* Cor do corpo do celular */
+            border: 12px solid #000;
+            border-radius: 45px;
+            padding: 10px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        /* --- Foto dentro do celular --- */
+        .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a foto preencha o espaço sem distorcer */
+            border-radius: 35px; /* Bordas arredondadas da "tela" */
+        }
+        
+        /* --- Título Principal --- */
+        .title {
+            font-size: 2em;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* --- Botões Estilo Netflix --- */
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 320px;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .play-button {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .info-button {
+            background-color: rgba(109, 109, 110, 0.7);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* --- Descrição --- */
+        .description {
+            font-size: 1.1em;
+            text-align: center;
+            line-height: 1.6;
+            max-width: 90%;
+            color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">AmorFlix</div>
+
+        <div class="phone-frame">
+            <img src="amor.jpg" alt="Foto do casal" class="photo">
+        </div>
+
+        <h1 class="title">Minha branquinha</h1>
+
+        <div class="buttons-container">
+            <a href="https://open.spotify.com/search/marra%20de%20durao?flow_ctx=2d10d49b-c0ec-464a-9bd9-e505a9160ace%3A1749764122#login" target="_blank" class="button play-button">
+                <span>🎵</span> Escutar Agora
+            </a>
+            <a href="https://open.spotify.com/playlist/3SR0fruGHqB1r38PWUNQEC?si=ukSxGsnRT2uOYZMHNRG8xA&pi=ea5xqyIzRi2be" target="_blank" class="button info-button">
+    <span>+</span> Nossa Playlist
+</a>
+
+        </div>
+
+        <p class="description">
+            De uma garota marrenta que me deu um bolo e que declarava publicamente não querer ninguém, para a mulher incrível que, neste exato momento, prepara um lanche com carinho para o homem da vida dela.
+        </p>
+
+    </div>
+
+</body>
+</html>
